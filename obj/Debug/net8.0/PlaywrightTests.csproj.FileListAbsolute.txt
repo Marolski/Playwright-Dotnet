@@ -399,3 +399,4 @@ C:\Users\User\Desktop\PlaywrifhtTests\obj\Debug\net8.0\refint\PlaywrightTests.dl
 C:\Users\User\Desktop\PlaywrifhtTests\obj\Debug\net8.0\PlaywrightTests.pdb
 C:\Users\User\Desktop\PlaywrifhtTests\obj\Debug\net8.0\PlaywrightTests.genruntimeconfig.cache
 C:\Users\User\Desktop\PlaywrifhtTests\obj\Debug\net8.0\ref\PlaywrightTests.dll
+C:\Users\User\Desktop\PlaywrifhtTests\obj\Debug\net8.0\PlaywrightTests.sourcelink.json

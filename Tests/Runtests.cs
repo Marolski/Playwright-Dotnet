@@ -19,5 +19,5 @@ public class RunTests
         await mainPage.GoToMainPage();
         await menuPage.ChooseMenuOption(nameof(MenuOptions.OMcDonalds));
 
-    }  
+    }
 }
