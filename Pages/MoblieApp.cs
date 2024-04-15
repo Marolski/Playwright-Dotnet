@@ -12,6 +12,7 @@ public class MobileApp: PageTest
     private readonly ILocator myDealsYeahSection;
     private ScrollHelper scrollHelper;
     private ZoomHelper zoomHelper;
+    private ScreenshotHelper screenshotHelper;
 
     public MobileApp(IPage page){
         _page = page;
@@ -19,11 +20,13 @@ public class MobileApp: PageTest
         myDealsYeahSection = _page.Locator("id=3w1-mojem-okazyeah-sekcja-opisowa");
         scrollHelper = new ScrollHelper(page);
         zoomHelper = new ZoomHelper(page);
+        screenshotHelper = new ScreenshotHelper(page);
     }
 
     public async Task GotoMyAwardsSection(){
         await scrollHelper.ScrollToElementById(myDealsYeahSection);
         await zoomHelper.Zoom("200");
+        await screenshotHelper.TakeScreenshot();
         await _page.PauseAsync();
     }
 }
