@@ -18,7 +18,7 @@ public class Setup
     {
         //Select browser and configuration
         var playwright = await Playwright.CreateAsync();
-        browser = await playwright.Firefox.LaunchAsync(new BrowserTypeLaunchOptions{
+        browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions{
             Headless = false
         });
         _page = await browser.NewPageAsync();

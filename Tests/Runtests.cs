@@ -16,8 +16,9 @@ public class RunTests
     public async Task StronaGlowna(){
         var mainPage = new MainPage(_page);
         var menuPage = new MenuPage(_page);
+        var mobileApp = new MobileApp(_page);
         await mainPage.GoToMainPage();
-        await menuPage.ChooseMenuOption(nameof(MenuOptions.OMcDonalds));
-
+        await menuPage.ChooseMenuOption(nameof(MenuOptions.Aplikacja));
+        await mobileApp.GotoMyAwardsSection();
     }
 }
